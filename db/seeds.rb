@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.create(name: "Racing Bike", description: "Fast, agile bike for everyday use.", image_url: "racebike.png")
-Product.create(name: "Vintage Bike", description: "Bespoke vintage  bike in old fashioned, retro style", image_url: "vintageike.png")
+Product.create(name: "Vintage Bike", description: "Bespoke vintage  bike in old fashioned, retro style", image_url: "vintagebike.png")
 Product.create(name: "Premium Bike", description: "Bespoke bike with modern, sturdy design", image_url: "premiumbike.png")
