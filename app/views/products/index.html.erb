@@ -9,7 +9,7 @@
     		<%= image_tag(product.image_url, class: "img-responsive") %>
       	<a href="#"><h1><%= product.name %></h1></a>
      	 	<p><%= product.description %></p>
-     	 	<p><%= product.color %></p>
+     	 	<p><%= product.colour %></p>
       	<strong>£ <%= product.price %></strong>
       	<p><%= link_to 'Show', product %></p>
       	<p><%= link_to 'Edit', edit_product_path(product) %></p>
@@ -22,4 +22,3 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
-
