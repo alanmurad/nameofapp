@@ -1,4 +1,4 @@
 <h1>Featured Product:</h1>
-<%= @featured_product.image_url %>
+<%= image_tag(@featured_product.image_url, class: "img-responsive") %>
 <h2><%= @featured_product.name %></h2>
 <p><%= @featured_product.description %></p>
