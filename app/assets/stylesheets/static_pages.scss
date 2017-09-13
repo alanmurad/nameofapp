@@ -7,13 +7,16 @@ body {
 	font-family: 'Montserrat Alternates', sans-serif;
 }
 
-h1,
 
 .introduction {
 	font-family: Courier New, serif;
 	text-align: center;
 	text-transform: bold;
 	padding-bottom: 50px;
+}
+
+h4 {
+	font-family: 'Abril Fatface', cursive;
 }
 
 
@@ -34,34 +37,50 @@ h1,
 	min-height: 50px;
 }
 
+.nav>li {
+	display: inline-block;
+}
+
+
 footer {
 	background-color: #142952;
 	color: white;
 	width: 100%;
-	text-transform: uppercase;
-	height: 4em;
+	height: 70px;
 }
 
-.copyright {
-	display: inline-block;
+
+#copyright {
+	display: block;
+	margin:auto 0;
+	text-align: center;
 }
 
 .social {
 	display: inline-block;
 	float: right;
-	margin: 20px;
+	font-size: 2.5em;
+	padding: 20px 50px 0 0; 
 }
 
-footer h3 {
-	padding-top: 20px;
+.social>i {
+	padding:0 10px;
+	margin-left: 50px;
 }
 
+#bottom-logo {
+	display: inline-block;
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-size: 3em;
+}
 
 #carousel-example-generic {
 	display: block;
 }
 
 .carousel-caption {
+	font-family: 'Montserrat Alternates', sans-serif;
 	font-size: 4em;
 	margin-bottom: 250px;
 	color: #FCFCFC;
@@ -79,7 +98,7 @@ footer h3 {
 
 .carousel-btn {
   position: absolute;
-  top: 75%;
+  top: 25%;
   right: 50%;
 }
 
