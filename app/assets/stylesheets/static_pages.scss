@@ -4,9 +4,10 @@
 
 body {
 	box-sizing: border-box;
-	padding-top: 100px;
-	font-family: Montserrat, sans-serif;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
+
+h1,
 
 .introduction {
 	font-family: Courier New, serif;
@@ -22,26 +23,66 @@ body {
 
 .navbar-header {
 	float: left;
-	padding: 10px;
 	text-transform: uppercase;
+	height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar {
+	min-height: 50px;
 }
 
 footer {
 	background-color: #142952;
 	color: white;
-	height: 120px;
-	margin: 0 auto;
+	width: 100%;
 	text-transform: uppercase;
-	margin-top: 100px;
+	height: 4em;
+}
+
+.copyright {
+	display: inline-block;
+}
+
+.social {
+	display: inline-block;
+	float: right;
+	margin: 20px;
 }
 
 footer h3 {
 	padding-top: 20px;
 }
 
-#social-icons {
-	font-size: 3em;
-	padding-top: 20px;
-	letter-spacing: 0.75em;
+
+#carousel-example-generic {
+	display: block;
 }
 
+.carousel-caption {
+	font-size: 4em;
+	margin-bottom: 250px;
+	color: #FCFCFC;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.carousel-control {
+	background-image: none;
+	text-shadow: none;
+	color: #fff !important;
+	opacity: 100;
+	width: 7%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 75%;
+  right: 50%;
+}
+
+.carousel-btn h3 {
+  text-transform: uppercase;
+}

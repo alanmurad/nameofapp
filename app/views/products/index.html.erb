@@ -4,11 +4,8 @@
 
 <div class="container">
   <div class="row">
-  	<% @products.each do |product| %>
-    	<%= render @products %>
-	  <% end %>
+  	<%= render @products %>
 	</div>
 </div>
-<br>
 
 <%= link_to 'New Product', new_product_path %>
