@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Product.create(name: "Looking for a ride?", image_url: "carouselbikeone.jpg")
-Product.create(name: "Custom Made", image_url: "carouselbiketwo.jpg")
-Product.create(name: "Bespoke Bikes", image_url: "carouselbikethree.jpg")
+Product.create(name: "Looking for a ride?", price: 50, image_url: "carouselbikeone.jpg")
+Product.create(name: "Custom Made", price: 50, image_url: "carouselbiketwo.jpg")
+Product.create(name: "Bespoke Bikes", price: 50, image_url: "green_bike.jpeg")
