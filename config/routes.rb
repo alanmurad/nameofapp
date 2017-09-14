@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   get 'static_pages/index'
+  
   root 'static_pages#landing_page'
 
 
