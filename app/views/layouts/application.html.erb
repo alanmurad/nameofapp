@@ -22,6 +22,11 @@
         <div class="navbar-header">
           <a href="#"><h4>The Bike Shed</h4></a> 
         </div><!-- end navbar-header -->
+        <%= form_with(url: products_path, method: 'get') do |form| %>
+        <%= form.label :q, 'Search for:' %>
+        <%= form.text_field :q, id: 'q', value: params[:q] %>
+        <%= form.submit 'Search' %>
+        <% end %>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <%= link_to "Home", root_path %>
