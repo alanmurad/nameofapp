@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat+Alternates" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -16,13 +15,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body>
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
+  <body> 
   	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -43,6 +36,7 @@
         </div>
       </div><!-- end container fluid -->
 		</nav><!-- end navbar -->
+    <p class="notice"><%= notice %></p>
     <%= yield %>
     <footer>
       <div class="row">
