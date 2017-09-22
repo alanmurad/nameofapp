@@ -45,8 +45,16 @@
         </div>
       </div><!-- end container fluid -->
 		</nav><!-- end navbar -->
-    <p class="notice"><%= notice %></p>
+		<!-- Flash Notice Tags -->
+		<% if notice %>
+			<div id="notice" class="alert alert-warning"><%= notice %></div>
+		<% end %>
+		<% if alert %>
+			<div id="alert" class="alert alert-danger"><%= alert %></div>
+		<% end %>
+		<div class="page-wrap">
     <%= yield %>
+  	</div>
     <footer>
       <div class="row">
         <div id="bottom-logo">
