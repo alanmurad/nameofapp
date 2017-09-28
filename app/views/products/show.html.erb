@@ -20,7 +20,8 @@
 	    <%= @product.lowest_rating_comment.try(:body) %>
 	  </div>
 	</div>
-
 	<%= link_to 'Edit', edit_product_path(@product) %> |
 	<%= link_to 'Back', products_path %>
+	<%= render 'new_comment' %>
+	<%= render 'comments' %>
 </div>
