@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "user_registrations" }
   resources :users
   resources :orders, only: [:index, :show, :create, :destroy]
-  resources :products
+  resources :products do
+    resources :comments
+  end
+  
   get 'static_pages/about'
   get 'static_pages/contact'
   get 'static_pages/index'
