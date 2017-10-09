@@ -2,14 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
 	box-sizing: border-box;
 	font-family: 'Montserrat Alternates', sans-serif;
 	margin-top: 6em;
+	background-color: #ccccff;
+	color: #1a1a1a;
+}
+
+header {
+	margin: 0 auto;
+  text-align: center;
 }
 
 .page-wrap {
-	margin: 3em 0;
+	margin: 8em 0;
 }
 
 #landing_page {
@@ -32,6 +45,11 @@ h4 {
 	color: #35A26D;
 }
 
+.navbar-nav {
+	display: inline-block;
+  vertical-align: top;
+}
+
 .navbar-header {
 	float: left;
 	text-transform: uppercase;
@@ -41,22 +59,28 @@ h4 {
   line-height: 20px;
 }
 
-.navbar {
-	min-height: 50px;
-}
-
 .nav>li {
 	display: inline-block;
 }
 
+#search {
+	margin-top: 8px;
+}
 
-footer {
+.search-button {
+	display: inline-block;
+  height: 30px;
+  width: auto;
+}
+
+footer, .page-wrap:after {
 	background-color: #142952;
 	color: white;
 	width: 100%;
-	position: relative;
+	height: 120px;
+	position: absolute;
 	display:block;
-	padding: 20px 0;
+	padding: 20px;
 }
 
 #copyright {

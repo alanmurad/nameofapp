@@ -7,10 +7,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat+Alternates" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
   </head>
@@ -21,25 +19,26 @@
         <div class="navbar-header">
           <a href="#"><h4>The Bike Shed</h4></a> 
         </div><!-- end navbar-header -->
-        <%= form_tag("/products", method: "get") do %>
-          <%= label_tag(:q, "Search for:") %>
-          <%= text_field_tag(:q, "", type: "text") %>
-          <%= submit_tag("Search") %>
-        <% end %>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <%= link_to "Home", root_path %>
-            <%= link_to "products", products_path %>
-            <%= link_to "about", static_pages_about_path %>
-            <%= link_to "contact", static_pages_contact_path %>
-		      </ul>
-          <ul class="nav pull-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "products", products_path %></li>
+            <li><%= link_to "about", static_pages_about_path %></li>
+            <li><%= link_to "contact", static_pages_contact_path %></li>
             <li>
             <% if user_signed_in? %>
             	<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
             <% else %>
             	<%= link_to('Login', new_user_session_path) %>
             <% end %>
+            </li>
+            <li id="search">
+            	<%= form_tag("/products", method: "get") do %>
+          			<%= text_field_tag(:q, "", type: "text", placeholder: "Search...") %>
+          			<%= button_tag(type: "submit", class: "btn btn-primary search-button") do %>
+                  <span class="glyphicon glyphicon-search"></span>
+                <% end %>
+        			<% end %>
             </li>
           </ul>
         </div>
