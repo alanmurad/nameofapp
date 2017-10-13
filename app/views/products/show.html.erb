@@ -11,6 +11,9 @@
 	    <p><%= @product.colour %></p>
 	    <p><%= @product.price %></p>
 	    <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+	    <%= form_with(url: '/payments/create') do |form| %>
+  			<%= render partial: "shared/stripe_checkout_button" %>
+			<% end %>
 	  </div>
 		<div class="col-xs-12 reviews">
 			<%= render partial: "shared/new_comment" %>
