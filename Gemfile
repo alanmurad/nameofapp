@@ -31,12 +31,17 @@ gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'b
 # gem 'capistrano-rails', group: :development
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'devise'
+gem 'cancancan', '~> 2.0'
+gem 'will_paginate', '~> 3.1.0'
+gem 'rails-controller-testing'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.6'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
@@ -51,8 +56,3 @@ group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
-
-gem 'devise'
-gem 'cancancan', '~> 2.0'
-gem 'will_paginate', '~> 3.1.0'
-gem 'rails-controller-testing'
