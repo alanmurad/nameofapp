@@ -11,7 +11,6 @@ class PaymentsController < ApplicationController
 	      currency: "gbp",
 	      source: token,
 	      description: params[:stripeEmail]
-	      receipt_email:
 	    )
 
 	    if charge.paid
@@ -25,6 +24,9 @@ class PaymentsController < ApplicationController
 	  flash[:success] = "Your payment was processed successfully"
 	  rescue Stripe::CardError => e
 	    # The card has been declined
+	    body = e.json_body
+      err = body[:error]
+      flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
 	  end
 
 	  redirect_to product_path(@product)
