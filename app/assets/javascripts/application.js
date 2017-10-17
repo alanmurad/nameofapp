@@ -15,6 +15,9 @@
 //= require jquery3
 //= require_tree .
 //= require jquery.raty
+//= require jquery
+//= require jquery_ujs
+//= require jquery.elevatezoom
 
 $(document).on('turbolinks:load', function() {
 
