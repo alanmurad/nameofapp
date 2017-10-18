@@ -17,10 +17,10 @@
 //= require jquery.raty
 //= require jquery
 //= require jquery_ujs
-//= require jquery.elevatezoom
+ //= require jquery.elevateZoom-3.0.8.min
 
 $(document).on('turbolinks:load', function() {
 
-$(".alert").delay(2000).fadeOut(800);
+	$(".alert").delay(2000).fadeOut(800);
 
 });
