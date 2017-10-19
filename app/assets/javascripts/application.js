@@ -9,18 +9,16 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
 //= require rails-ujs
 //= require turbolinks
 //= require jquery3
-//= require_tree .
 //= require jquery.raty
 //= require jquery
 //= require jquery_ujs
- //= require jquery.elevateZoom-3.0.8.min
+//= require jquery.elevateZoom-3.0.8.min.js
+//= require_tree .
 
 $(document).on('turbolinks:load', function() {
-
 	$(".alert").delay(2000).fadeOut(800);
-
+	$(".img-zoom").elevateZoom();
 });
