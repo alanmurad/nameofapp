@@ -3,8 +3,8 @@
 
 	<div class="row">
     <h3><%= @product.name %></h3>
-    <div class=" col-md-6">
-	    <%= image_tag(@product.image_url, class: "img-responsive img-zoom",  data_zoom_image: "@product.image_url") %>
+    <div class="col-md-6">
+	    <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image:@product.image_url) %> 
 	  </div>
 	  <div class="col-md-6">
 	  	<p><%= @product.description %></p>
