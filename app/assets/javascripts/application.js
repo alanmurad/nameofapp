@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -16,7 +15,6 @@
 //= require_tree .
 //= require jquery.elevateZoom-3.0.8.min.js
 
-=======
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -43,4 +41,4 @@ $(document).on('turbolinks:load', function() {
 $(".alert").delay(2000).fadeOut(800);
 
 });
->>>>>>> master
+
