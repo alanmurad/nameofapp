@@ -2,12 +2,16 @@
 	<h1>Orders</h1>
 </header>
 
-<% @orders.each do |order| %>
-	<div class="container">
-  	<div class="row">
-  		<p>User ID: <%= order.user_id %></p>
+<div class="row">
+	<% @orders.each do |order| %>
+  	<div class="col-sm-2 col-md-4">
+  		<h2>
+  			Order # <%= order.id %>:
+  			<%= link_to order.product.name, order.product %>
+  		</h2>
   		<p>Product: <%= order.product.name %></p>
-  		<p>Total: $<%= order.total %></p>
+  		<p><%= order.product.description %></p>
+  		<strong>$ <%= order.product.price %></strong>
   	</div>
-  </div>
-<% end %>
+  <% end %>
+ </div>
