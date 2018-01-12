@@ -28,3 +28,7 @@ footer {
 
 }
 
+#notice, #alert {
+	margin-top: 50px;
+}
+
