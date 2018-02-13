@@ -1,3 +1,36 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.form-row {
+  display: flex;
+}
+
+.signup-login-form-container {
+  margin: 4rem auto;
+  padding: 2rem 2rem;
+  width: 328px;
+  border-radius: 2px;
+  display: block;
+
+  h2 {
+    padding-bottom: 2rem;
+  }
+
+  .field {
+  	margin:0;
+  }
+
+  .field-devise {
+    input {
+  		width: 225px;
+  	}
+
+  	padding: 1.2rem 0;
+  }
+}
+
+.checkbox {
+  display: inline-block;
+  padding: 1rem 0 !important;
+}
