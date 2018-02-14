@@ -1,7 +1,7 @@
-<div class="col-sm-2 col-md-4">
-	<% cache @products do %>
+<% cache product do %>
+	<div class="col-sm-2 col-md-4">
 		<%= link_to(product) do %>
-  	  <%= image_tag(product.image_url, class: "img-responsive thumbnail") %>
+ 	  <%= image_tag(product.image_url, class: "img-responsive thumbnail") %>
   	<% end %>
  		<h2><%= product.name %></h2>
  		<p><%= product.description %></p>
